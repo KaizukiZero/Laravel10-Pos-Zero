@@ -14,6 +14,9 @@
                     @if ($errors->has('username'))
                     <span class="text-danger">{{ $errors->first('username') }}</span>
                     @endif
+                    @if ($errors->has('password'))
+                    <span class="text-danger">{{ $errors->first('password') }}</span>
+                    @endif
                     <input type="text" name="username" id="username" class="login-input" placeholder="Username">
 
                     <input type="password" name="password" id="password" class="login-input" placeholder="Password">

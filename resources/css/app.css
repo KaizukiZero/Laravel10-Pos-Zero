@@ -1,4 +1,5 @@
 @import url(./toggle-mode.css);
+@import url(./loginpage.css);
 
 :root {
     --primary-color: #fff;
@@ -28,6 +29,7 @@ html,
 body {
     overflow-x: hidden;
     height: 100vh;
+    color: var(--font-color);
     background: var(--bg-color);
     background-position: center;
     background-repeat: no-repeat;
@@ -44,6 +46,7 @@ img {
     width: 100%;
 }
 
+
 .container {
     /* margin: 2rem auto; */
     font-size: 16px;
@@ -55,62 +58,3 @@ img {
     font-style: italic;
 }
 
-.login-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.login-container .login-form {
-    backdrop-filter: blur(10px);
-    border-radius: 15px;
-    padding: 1.5em;
-    border: 0.1px solid var(--border-color);
-    box-shadow: 1px 1px 15px 15px var(--border-color);
-}
-
-.login-field {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    padding: 1em;
-}
-
-.login-form .login-title {
-    font-size: 5vmin;
-    white-space: nowrap;
-    font-weight: 600;
-    text-align: center;
-    color: var(--heading-color);
-    user-select: none;
-    border-radius: 15px 15px 0 0;
-    padding: 0.5em 1em;
-}
-
-.login-field input {
-    height: 100%;
-    width: 100%;
-    outline: none;
-    border-width: 0;
-    color: var(--font-color);
-    border-style: none;
-    border-bottom: solid 2px var(--border-color);
-    background: transparent;
-    font-size: 1.5vmax;
-    padding: 0.5em 0 0.5em 1em;
-}
-
-.login-field input:focus {
-    border-radius: 5px;
-    box-shadow: 1px 1px 5px 5px rgba(255, 255, 255, 0.5);
-}
-
-.login-field button[type="submit"] {
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    margin-top: 0.5em;
-    padding: 0.5em 0;
-    font-size: 20px;
-    border-radius: 25px;
-}

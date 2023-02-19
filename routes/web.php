@@ -20,5 +20,5 @@ Route::post('/login', [Cores::class , 'login'])->name('admins_login');
 
 Route::middleware('auth:admin')->prefix('/')->group(function () {
     Route::get('dashboard', [Pages::class , 'dashboard'])->name('dashboard');
-
+    Route::get('logout',[Cores::class,'logout'])->name('logout');
 });
