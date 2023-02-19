@@ -1,7 +1,9 @@
 
 .toggle-theme{
     display: flex;
-    float: right;
+    position: absolute;
+    top: 5px;
+    right: 5px;
 }
 
 .toggle-theme label {
