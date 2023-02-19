@@ -11,9 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('cores', function (Blueprint $table) {
+        Schema::create('tb_admins', function (Blueprint $table) {
             $table->id();
+            $table->string('username',16);
+            $table->string('password');
+            $table->tinyInteger('class');
+            $table->json('permissions');
             $table->timestamps();
+            $table->unique('username','index_user');
         });
     }
 
@@ -22,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('cores');
+        Schema::dropIfExists('tb_admins');
     }
 };
