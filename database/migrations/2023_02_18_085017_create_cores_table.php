@@ -16,7 +16,9 @@ return new class extends Migration
             $table->string('username',16);
             $table->string('password');
             $table->tinyInteger('class');
+            $table->json('permissions');
             $table->timestamps();
+            $table->unique('username','index_user');
         });
     }
 

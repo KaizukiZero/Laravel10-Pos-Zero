@@ -50,6 +50,11 @@ img {
     /* width: 100%; */
 }
 
+.text-danger{
+    color: red;
+    font-style: italic;
+}
+
 .login-container {
     position: absolute;
     top: 50%;

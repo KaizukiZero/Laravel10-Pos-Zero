@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController as Pages;
+use App\Http\Controllers\CoreController as Cores;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,9 +15,10 @@ use App\Http\Controllers\PageController as Pages;
 |
 */
 
-Route::get('/login', [Pages::class , 'login']);
+Route::get('/login', [Pages::class , 'login'])->name('login');
+Route::post('/login', [Cores::class , 'login'])->name('admins_login');
 
-Route::middleware(['auth', 'second'])->prefix('/')->group(function () {
-    Route::get('dashboard', [Pages::class , 'dashboard']);
+Route::middleware('auth:admin')->prefix('/')->group(function () {
+    Route::get('dashboard', [Pages::class , 'dashboard'])->name('dashboard');
 
 });
