@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PageController as Pages;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/login', [Pages::class , 'login']);
+
+Route::middleware(['auth', 'second'])->prefix('/')->group(function () {
+    Route::get('dashboard', [Pages::class , 'dashboard']);
+
 });
