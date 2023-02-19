@@ -87,7 +87,7 @@ img {
     width: 100%;
     outline: none;
     border-width: 0;
-    color: white;
+    color: var(--font-color);
     border-style: none;
     border-bottom: solid 2px var(--border-color);
     background: transparent;
