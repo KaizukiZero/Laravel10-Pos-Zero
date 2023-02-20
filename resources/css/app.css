@@ -4,13 +4,13 @@
 @import url(sidebar.css);
 
 :root {
-    --primary-color: #fff;
-    --secondary-color: #818cab;
+    --primary-color: #f3f3f3;
+    --secondary-color: #e7e7e8;
     --font-color: #111315;
 
-    --bg-color: #fff;
-    --heading-color: #818cab;
-    --border-color: #000;
+    --bg-color: #f3f3f3;
+    --heading-color: #2d2d2d;
+    --border-color: #2d2d2d;
     --invert:0;
 
     --sidebar-desktop-size: 200px;
@@ -21,11 +21,11 @@
 [data-theme="dark"] {
     --primary-color: #111315;
     --secondary-color: #2d2d2d;
-    --font-color: #e1e1ff;
+    --font-color: #f3f3f3;
 
     --bg-color: #292c35;
-    --heading-color: #fff;
-    --border-color: #fff;
+    --heading-color: #e7e7e8;
+    --border-color: #e7e7e8;
     --invert:1;
 }
 
@@ -74,4 +74,21 @@ img {
 
 .dashboard{
     padding-left: 2em;
+}
+
+.searchbar{
+    padding: 1em 0em 1em 1em;
+}
+.searchbar .search-form{
+    padding: 1em;
+    border-radius: 5px;
+    width: 30vmin;
+    outline: none;
+    color: var(--font-color);
+    border: 0;
+    background: var(--secondary-color);
+}
+
+.search-form::placeholder{
+    color:var(--font-color);
 }
