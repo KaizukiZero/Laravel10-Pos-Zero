@@ -16,4 +16,29 @@ class PageController extends Controller
         return view('pages.dashboard');
     }
 
+    public function reservations()
+    {
+        return view('pages.reservations');
+    }
+
+    public function services()
+    {
+        return view('pages.services');
+    }
+
+    public function menupage()
+    {
+        return view('pages.menu');
+    }
+
+    public function delivery()
+    {
+        return view('pages.delivery');
+    }
+
+    public function accounting()
+    {
+        return view('pages.accounting');
+    }
+
 }
