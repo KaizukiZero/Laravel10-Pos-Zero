@@ -9,11 +9,11 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 const toggleSwitch = document.body.querySelector('.toggle-theme input[type="checkbox"]');
 function switchTheme(e) {
     if (e.target.checked) {
-        document.body.setAttribute('data-theme', 'dark');
+        document.documentElement.setAttribute('data-theme', 'dark');
         localStorage.setItem('theme', 'dark'); //add this
     }
     else {
-        document.body.setAttribute('data-theme', 'light');
+        document.documentElement.setAttribute('data-theme', 'light');
         localStorage.setItem('theme', 'light'); //add this
     }
 }
@@ -21,7 +21,7 @@ function switchTheme(e) {
 const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
 
 if (currentTheme) {
-    document.body.setAttribute('data-theme', currentTheme);
+    document.documentElement.setAttribute('data-theme', currentTheme);
 
     if (currentTheme === 'dark') {
         toggleSwitch.checked = true;

@@ -1,10 +1,8 @@
 
 .toggle-theme{
     display: flex;
-    position: absolute;
-    top: 5px;
-    right: 5px;
 }
+
 
 .toggle-theme label {
     width: 80px;

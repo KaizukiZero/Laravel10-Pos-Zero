@@ -15,13 +15,16 @@ use App\Http\Controllers\CoreController as Cores;
 |
 */
 
+//root url to login page
 Route::get('/', function () {
      return redirect('login');
 });
 
+//guest action
 Route::get('/login', [Pages::class , 'login'])->name('login');
 Route::post('/login', [Cores::class , 'login'])->name('admins_login');
 
+//admin action
 Route::middleware('auth:admin')->prefix('/')->group(function () {
     Route::get('dashboard', [Pages::class , 'dashboard'])->name('dashboard');
     Route::get('logout',[Cores::class,'logout'])->name('logout');

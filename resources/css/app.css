@@ -1,22 +1,32 @@
-@import url(./toggle-mode.css);
-@import url(./loginpage.css);
+@import url('https://fonts.googleapis.com/css2?family=Athiti:wght@200;300;400;500;600;700&display=swap');
+@import url(loginpage.css);
+@import url(toggle-mode.css);
+@import url(sidebar.css);
 
 :root {
     --primary-color: #fff;
     --secondary-color: #818cab;
-    --font-color: #000;
+    --font-color: #111315;
+
     --bg-color: #fff;
     --heading-color: #818cab;
     --border-color: #000;
+    --invert:0;
+
+    --sidebar-desktop-size: 200px;
+    --sidebar-table-size: 100px;
+    --sidebar-mobilc-size: 80px;
 }
 
 [data-theme="dark"] {
-    --primary-color: #9a97f3;
-    --secondary-color: #818cab;
+    --primary-color: #111315;
+    --secondary-color: #2d2d2d;
     --font-color: #e1e1ff;
+
     --bg-color: #292c35;
     --heading-color: #fff;
     --border-color: #fff;
+    --invert:1;
 }
 
 * {
@@ -29,8 +39,9 @@ html,
 body {
     overflow-x: hidden;
     height: 100vh;
+    font-family: 'Athiti', sans-serif;
     color: var(--font-color);
-    background: var(--bg-color);
+    background: var(--primary-color);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -48,6 +59,9 @@ img {
 
 
 .container {
+    position:relative;
+	height:100vh;
+    padding-left: var(--sidebar-desktop-size);
     /* margin: 2rem auto; */
     font-size: 16px;
     /* width: 100%; */
@@ -58,3 +72,6 @@ img {
     font-style: italic;
 }
 
+.dashboard{
+    padding-left: 2em;
+}
