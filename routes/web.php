@@ -15,6 +15,10 @@ use App\Http\Controllers\CoreController as Cores;
 |
 */
 
+Route::get('/', function () {
+     return redirect('login');
+});
+
 Route::get('/login', [Pages::class , 'login'])->name('login');
 Route::post('/login', [Cores::class , 'login'])->name('admins_login');
 
