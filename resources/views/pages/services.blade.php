@@ -4,7 +4,7 @@
 
     <div class="x-container">
         <div class="dashboard">
-            Dashboard Page
+            Service Page
         </div>
     </div>
 @endsection

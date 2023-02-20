@@ -26,6 +26,14 @@ Route::post('/login', [Cores::class , 'login'])->name('admins_login');
 
 //admin action
 Route::middleware('auth:admin')->prefix('/')->group(function () {
+    //get
     Route::get('dashboard', [Pages::class , 'dashboard'])->name('dashboard');
+    Route::get('reservation', [Pages::class , 'reservations'])->name('reservation');
+    Route::get('service', [Pages::class , 'services'])->name('service');
+    Route::get('menu', [Pages::class , 'menupage'])->name('menupage');
+    Route::get('delivery', [Pages::class , 'delivery'])->name('delivery');
+    Route::get('accounting', [Pages::class , 'accounting'])->name('accounting');
     Route::get('logout',[Cores::class,'logout'])->name('logout');
+
+    //post
 });

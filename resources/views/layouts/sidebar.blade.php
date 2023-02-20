@@ -63,19 +63,19 @@
         <div class="menu-area">
             <ul>
                 <li>
-                    <a href="#" class="menu-link">Reservations</a>
+                    <a href="{{route('reservation')}}" class="menu-link">Reservations</a>
                 </li>
                 <li>
-                    <a href="#" class="menu-link">Services</a>
+                    <a href="{{route('service')}}" class="menu-link">Services</a>
                 </li>
                 <li>
-                    <a href="#" class="menu-link">Menu</a>
+                    <a href="{{route('menupage')}}" class="menu-link">Menu</a>
                 </li>
                 <li>
-                    <a href="#" class="menu-link">Delivery</a>
+                    <a href="{{route('delivery')}}" class="menu-link">Delivery</a>
                 </li>
                 <li>
-                    <a href="#" class="menu-link">Accounting</a>
+                    <a href="{{route('accounting')}}" class="menu-link">Accounting</a>
                 </li>
             </ul>
         </div>
