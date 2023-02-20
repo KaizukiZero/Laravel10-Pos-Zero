@@ -2,6 +2,9 @@
 
 @section('contents')
 
-
-<div> Dashboard Page </div>
+    <div class="dashboard-container">
+        <div class="dashboard">
+            Dashboard Page
+        </div>
+    </div>
 @endsection
