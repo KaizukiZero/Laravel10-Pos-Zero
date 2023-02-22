@@ -63,19 +63,19 @@
         <div class="menu-area">
             <ul>
                 <li>
-                    <a href="{{route('reservation')}}" class="menu-link">Reservations</a>
+                    <a class="menu-link reservation" data-axios="reservation">Reservations</a>
                 </li>
                 <li>
-                    <a href="{{route('service')}}" class="menu-link">Services</a>
+                    <a class="menu-link service" data-axios="service">Services</a>
                 </li>
                 <li>
-                    <a href="{{route('menupage')}}" class="menu-link">Menu</a>
+                    <a class="menu-link menupage" data-axios="menupage">Menu</a>
                 </li>
                 <li>
-                    <a href="{{route('delivery')}}" class="menu-link">Delivery</a>
+                    <a class="menu-link delivery" data-axios="delivery">Delivery</a>
                 </li>
                 <li>
-                    <a href="{{route('accounting')}}" class="menu-link">Accounting</a>
+                    <a class="menu-link accounting" data-axios="accounting">Accounting</a>
                 </li>
             </ul>
         </div>
