@@ -17,10 +17,15 @@
         @include('layouts.sidebar')
         @endauth
         <div class="container">
+            @auth
             <div class="searchbar">
                 <input type="text" class="search-form" placeholder="Search..">
             </div>
+            @endauth
+
+            <div class="x-container">
                 @yield('contents')
+            </div>
         </div>
     </div>
 </body>
